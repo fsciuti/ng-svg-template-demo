@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 672 242" width="672" height="242">
+	<path [attr.fill]="backgroundColor" d="M-249 -236L1031 -236L1031 484L-249 484L-249 -236Z" />
+	<g app-icon [fill]="foregroundColor"></g>
+	<text style="transform: matrix(1,0,0,1,407,126.56)" >
+		<tspan [attr.fill]="foregroundColor" x="0" y="0" class="title">{{ title }}</tspan>
+	</text>
+	<text [attr.fill]="foregroundColor" style="transform: matrix(1,0,0,1,407,164.96)" >
+		<tspan x="0" y="0" class="subtitle">{{ subtitle }}</tspan>
+	</text>
+</svg>
