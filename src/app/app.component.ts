@@ -5,9 +5,9 @@ import { Component } from '@angular/core';
   template: `
   <div class="centerDiv">
     <app-logo
-      [title]="'Best Logo'"
+      [title]="title"
       [backgroundColor]="'red'"
-      [foregroundColor]="'black'"
+      [foregroundColor]="foregroundColor"
     ></app-logo> 
     <app-body></app-body>
   </div>
@@ -15,5 +15,13 @@ import { Component } from '@angular/core';
   styles: []
 })
 export class AppComponent {
-  title = 'ng-svg-template';
+  title = 'Best Logo';
+  foregroundColor = 'black'
+
+  constructor() {
+    setTimeout(() => {
+      this.title = 'My Best Logo';
+      this.foregroundColor = 'white';
+    }, 3000);
+  }
 }
